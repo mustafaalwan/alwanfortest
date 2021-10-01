@@ -18,6 +18,14 @@ class _HomePageWidgetState extends State<HomePageWidget> {
     return Scaffold(
       key: scaffoldKey,
       backgroundColor: Color(0xFFF5F5F5),
+      body: SafeArea(
+        child: Text(
+          'Hello World',
+          style: FlutterFlowTheme.bodyText1.override(
+            fontFamily: 'Poppins',
+          ),
+        ),
+      ),
     );
   }
 }
